@@ -31,5 +31,5 @@ def generate_recommendations():
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
-if __name__ == '__main__':
-    app.run(port=5002)
+# if __name__ == '__main__':
+#     app.run(port=5002)
