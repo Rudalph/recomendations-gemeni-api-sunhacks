@@ -6,9 +6,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-GOOGLE_API_KEY = "AIzaSyAk6oA5r0bI2Jhe5RuM4rn3JAVOBlRUjuw"
+GOOGLE_API_KEY = "AIzaSyC5agUKvQR7gBuutdV0FSo0tpz2MRn8uL4"
 genai.configure(api_key=GOOGLE_API_KEY)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('models/gemini-1.5-pro-latest')
 
 @app.route('/', methods=['POST'])
 def generate_recommendations():
